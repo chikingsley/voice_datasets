@@ -1,0 +1,50 @@
+name: Dataset addition
+description: Propose a new voice/audio dataset for the curated list.
+title: "Add dataset: <name>"
+labels:
+  - dataset
+body:
+  - type: input
+    id: dataset_name
+    attributes:
+      label: Dataset name
+      placeholder: Example: VoxPopuli
+    validations:
+      required: true
+
+  - type: input
+    id: dataset_url
+    attributes:
+      label: Direct dataset URL
+      description: Link to the dataset page/download (not just a paper).
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: Include language(s), task(s), and size/hours if known.
+      placeholder: "Multilingual ASR dataset, 1000+ hours..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: access_license
+    attributes:
+      label: Access and license
+      description: Open, gated, paid, academic-only, and license details.
+      placeholder: "CC-BY 4.0, requires account signup..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I verified the URL is reachable.
+          required: true
+        - label: I verified this dataset is not already listed in README.md.
+          required: true
