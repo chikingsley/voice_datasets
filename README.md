@@ -3,8 +3,22 @@ A comprehensive list of open source voice and music datasets. I released this fo
 
 ![](https://media.giphy.com/media/3o6ozifkiTecWsJOFO/giphy.gif)
 
-## Audio datasets 
-There are two main types of audio datasets: speech datasets and audio event/music datasets. 
+## Audio datasets
+This repository tracks open datasets for speech, voice, and audio events/music.
+
+## Table of contents
+* [How this list is organized](#how-this-list-is-organized)
+* [Maintenance and curation](#maintenance-and-curation)
+* [Browse quickly](#browse-quickly)
+* [Pattern references](#pattern-references)
+* [Full catalog](#full-catalog)
+* [Upstream provenance](#upstream-provenance)
+* [Learn more](#learn-more)
+
+## How this list is organized
+* The quick index is optimized for discovery by task and language.
+* The full catalog keeps the complete A-Z dataset list in collapsible sections.
+* New curated additions should be reflected in both places when possible.
 
 ## Maintenance and curation
 This fork is actively maintained and accepts vetted additions from community issues.
@@ -14,7 +28,41 @@ When adding a dataset, please include:
 * Licensing/access details (free, commercial, gated, etc.).
 * A short description (language, task, and size/hours if known).
 
-### Speech datasets 
+## Browse quickly
+This section is a curated index (not exhaustive). Use the full catalog for complete coverage.
+
+### By task
+* ASR and transcription: [Common Voice](https://commonvoice.mozilla.org/en/datasets), [Librispeech](https://www.openslr.org/12), [SPGISpeech](https://datasets.kensho.com/datasets/spgispeech), [VoxPopuli](https://github.com/facebookresearch/voxpopuli), [Ted-LIUM](https://www.openslr.org/51/), [People's Speech](https://mlcommons.org/en/peoples-speech/).
+* Emotion and affect: [IEMOCAP](https://sail.usc.edu/iemocap/iemocap_release.htm), [CREMA-D](https://github.com/CheyneyComputerScience/CREMA-D), [RAVDESS](https://zenodo.org/record/1188976#.XrC7a5NKjOR), [Emo-DB](http://emodb.bilderbar.info/index-1280.html), [TESS](https://tspace.library.utoronto.ca/handle/1807/24487), [MELD](https://github.com/SenticNet/MELD).
+* Clinical and health speech: [Coswara](https://github.com/iiscleap/Coswara-Data), [CUCO Surgery Speech Corpus](https://zenodo.org/records/11654546), [NeuroVoz](https://zenodo.org/records/13647600), [Parkinson's speech dataset](https://archive.ics.uci.edu/ml/datasets/Parkinson+Speech+Dataset+with++Multiple+Types+of+Sound+Recordings), [SEP-28k](https://www.kaggle.com/datasets/ikrbasak/sep-28k), [Parrot Radiology ASR EN](https://huggingface.co/datasets/ysdede/parrot-radiology-asr-en).
+* Speaker and diarization: [VoxCeleb](https://github.com/andabi/voice-vector), [VOiCES Dataset](https://iqtlabs.github.io/voices/), [Awesome_Diarization](https://github.com/jim-schwoebel/awesome-diarization).
+* Speech enhancement and separation: [CHIME](https://archive.org/details/chime-home), [WHAM! and WHAMR!](http://wham.whisper.ai/), [LibriMix](https://github.com/JorisCos/LibriMix), [VCTK-2Mix](https://github.com/JorisCos/VCTK-2Mix), [Microsoft Scalable Noisy Speech Dataset](https://github.com/microsoft/MS-SNSD).
+* Commands and keyword spotting: [Speech Commands Dataset](http://ai.googleblog.com/2017/08/launching-speech-commands-dataset.html), [Free Spoken Digit Dataset](https://github.com/Jakobovski/free-spoken-digit-dataset), [AudioMNIST](https://github.com/soerenab/AudioMNIST), [Multilingual Spoken Words Corpus (MSWC)](https://mlcommons.org/datasets/multilingual-spoken-words/).
+* Human non-speech vocal sounds: [VocalSound](https://github.com/YuanGongND/vocalsound), [VIVAE](https://zenodo.org/record/4066235), [Nonverbal Vocalization Dataset](https://github.com/deeplyinc/Nonverbal-Vocalization-Dataset).
+* Dataset directories and meta-lists: [ASR datasets](https://github.com/robmsmt/ASR_Audio_Data_Links), [OpenSLR](https://openslr.org), [SER Datasets](https://github.com/SuperKogito/SER-datasets), [ISMIR Datasets List](https://www.ismir.net/resources/datasets/).
+
+### By language
+* Multilingual: [Common Voice](https://commonvoice.mozilla.org/en/datasets), [VoxPopuli](https://github.com/facebookresearch/voxpopuli), [Multilingual Spoken Words Corpus (MSWC)](https://mlcommons.org/datasets/multilingual-spoken-words/), [OpenSLR](https://openslr.org), [People's Speech](https://mlcommons.org/en/peoples-speech/).
+* English: [Librispeech](https://www.openslr.org/12), [Ted-LIUM](https://www.openslr.org/51/), [SPGISpeech](https://datasets.kensho.com/datasets/spgispeech), [RAVDESS](https://zenodo.org/record/1188976#.XrC7a5NKjOR), [VOiCES Dataset](https://iqtlabs.github.io/voices/).
+* Arabic: [Arabic Speech Corpus](http://en.arabicspeechcorpus.com/), [ANAD](https://www.kaggle.com/suso172/arabic-natural-audio-dataset), [BAVED](https://www.kaggle.com/a13x10/basic-arabic-vocal-emotions-dataset).
+* Spanish (Castilian): [CUCO Surgery Speech Corpus](https://zenodo.org/records/11654546), [NeuroVoz](https://zenodo.org/records/13647600).
+* Persian: [Persian Consonant Vowel Combination (PCVC) Speech Dataset](https://github.com/S-Malek/PCVC), [ShEMO](https://github.com/mansourehk/ShEMO).
+* Korean: [Korean Read Speech Corpus](https://github.com/deeplyinc/Korean-Read-Speech-Corpus).
+* Japanese: [Keio-ESD](http://research.nii.ac.jp/src/en/Keio-ESD.html).
+* German: [Thorsten dataset](https://github.com/thorstenMueller/deep-learning-german-tts/), [Emo-DB](http://emodb.bilderbar.info/index-1280.html).
+* Italian: [EMOVO](http://voice.fub.it/activities/corpora/emovo/index.html).
+* Urdu: [URDU-Dataset](https://github.com/siddiquelatif/urdu-dataset).
+* Bengali-English (code-switched): [MediBeng](https://huggingface.co/datasets/pr0mila-gh0sh/MediBeng).
+
+## Pattern references
+* [awesomedata/awesome-public-datasets](https://github.com/awesomedata/awesome-public-datasets) - topic-first TOC and category section pattern.
+* [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - canonical awesome-list structure and contribution conventions.
+* GitHub `<details>` sections - useful for long lists while keeping quick index sections visible.
+
+## Full catalog
+<details open>
+<summary><strong>Speech datasets (A-Z)</strong></summary>
+
 * [AESDD](http://m3c.web.auth.gr/research/aesdd-speech-emotion-recognition/) - around 500 utterances by a diverse group of actors (over 5 actors) simlating various emotions.
 * [ANAD](https://www.kaggle.com/suso172/arabic-natural-audio-dataset) - 1384 recording by multiple speakers; 3 emotions: angry, happy, surprised.
 * [Arabic Speech Corpus](http://en.arabicspeechcorpus.com/) - The Arabic Speech Corpus (1.5 GB) is a Modern Standard Arabic (MSA) speech corpus for speech synthesis. The corpus contains phonetic and orthographic transcriptions of more than 3.7 hours of MSA speech aligned with recorded speech on the phoneme level. The annotations include word stress marks on the individual phonemes. 
@@ -112,7 +160,11 @@ When adding a dataset, please include:
 * [WHAM! and WHAMR!](http://wham.whisper.ai/) - The WSJ0 Hipster Ambient Mixtures (WHAM!) dataset pairs each two-speaker mixture in the wsj0-2mix dataset with a unique noise background scene. WHAMR! is an extension to WHAM! that adds artificial reverberation to the speech signals in addition to the background noise. The noise audio was collected at various urban locations throughout the San Francisco Bay Area in late 2018. The environments primarily consist of restaurants, cafes, bars, and parks. Size of WHAM! dataset: 17.65 GB unzipping to 35 GB.
 * [Zero Resource Speech Challenge](https://github.com/bootphon/zerospeech2017) - The ultimate goal of the Zero Resource Speech Challenge is to construct a system that learns an end-to-end Spoken Dialog (SD) system, in an unknown language, from scratch, using only information available to a language learning infant. “Zero resource” refers to zero linguistic expertise (e.g., orthographic/linguistic transcriptions), not zero information besides audio (visual, limited human feedback, etc). The fact that 4-year-olds spontaneously learn a language without supervision from language experts show that this goal is theoretically reachable.
 
-### Audio events and music 
+</details>
+
+<details open>
+<summary><strong>Audio events and music</strong></summary>
+
 * [AudioSet](https://research.google.com/audioset/) - An expanding ontology of 632 audio event classes and a collection of 2,084,320 human-labeled 10-second sound clips drawn from YouTube videos. Easily download AudioSet [here](https://github.com/jim-schwoebel/download_audioset).
 * [Bird audio detection challenge](http://machine-listening.eecs.qmul.ac.uk/bird-audio-detection-challenge/) -  This challenge contained new datasets (5.4 GB) collected in real live bio-acoustics monitoring projects, and an objective, standardized evaluation framework.
 * [Environmental audio dataset](http://www.cs.tut.fi/~heittolt/datasets) - Audio data collection and manual data annotation both are tedious processes, and lack of proper development dataset limits fast development in the environmental audio research.
@@ -125,6 +177,13 @@ When adding a dataset, please include:
 * [Public domain sounds](http://pdsounds.tuxfamily.org/) - Good for wake word detection; a wide array of sounds that can be used for object detection research (524 MB - 635 SOUNDS - Open for public use). 
 * [RSC Sounds](https://github.com/2003scape/rsc-sounds) - RSC sounds from RuneScape Classic (8-bit, u-law encoded, 8000 Hz pcm samples).
 * [Urban Sound Dataset](https://urbansounddataset.weebly.com/) - two datasets and a taxonomy for urban sound research.
+
+</details>
+
+## Upstream provenance
+* Original repository (source inspiration): [jim-schwoebel/voice_datasets](https://github.com/jim-schwoebel/voice_datasets).
+* Maintained fork (active updates and curation): [chikingsley/voice_datasets](https://github.com/chikingsley/voice_datasets).
+* This fork keeps attribution to upstream while maintaining an updated catalog and contribution workflow.
 
 ## Learn more
 Any feedback this repository is greatly appreciated. 
