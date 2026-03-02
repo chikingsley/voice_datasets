@@ -1,0 +1,76 @@
+name: Link Check
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".github/workflows/link-check.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "0 13 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  pr-changed-markdown:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect changed Markdown files
+        id: changed-files
+        uses: tj-actions/changed-files@v46
+        with:
+          files: |
+            **/*.md
+
+      - name: Run link check on changed Markdown files
+        if: steps.changed-files.outputs.any_changed == 'true'
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --exclude-mail
+            --max-retries 2
+            --retry-wait-time 2
+            --accept 200,201,202,203,204,206,301,302,307,308,401,403,429
+            ${{ steps.changed-files.outputs.all_changed_files }}
+          fail: true
+
+      - name: Skip when no Markdown changed
+        if: steps.changed-files.outputs.any_changed != 'true'
+        run: echo "No Markdown files changed."
+
+  weekly-full-markdown-scan:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run full Markdown link scan
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --exclude-mail
+            --max-retries 2
+            --retry-wait-time 2
+            --accept 200,201,202,203,204,206,301,302,307,308,401,403,429
+            --format markdown
+            --output lychee-report.md
+            '**/*.md'
+          fail: false
+
+      - name: Upload weekly link report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lychee-report
+          path: lychee-report.md
+          if-no-files-found: ignore

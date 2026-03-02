@@ -27,6 +27,11 @@ When adding a dataset, please include:
 * A direct dataset URL (not only a paper link).
 * Licensing/access details (free, commercial, gated, etc.).
 * A short description (language, task, and size/hours if known).
+* Expected quick-index placement (`By task` and `By language`).
+
+Link health:
+* Pull requests run automated Markdown link checks on changed files.
+* A scheduled full link scan runs weekly and publishes a report artifact.
 
 ## Browse quickly
 This section is a curated index (not exhaustive). Use the full catalog for complete coverage.
@@ -42,17 +47,47 @@ This section is a curated index (not exhaustive). Use the full catalog for compl
 * Dataset directories and meta-lists: [ASR datasets](https://github.com/robmsmt/ASR_Audio_Data_Links), [OpenSLR](https://openslr.org), [SER Datasets](https://github.com/SuperKogito/SER-datasets), [ISMIR Datasets List](https://www.ismir.net/resources/datasets/).
 
 ### By language
-* Multilingual: [Common Voice](https://commonvoice.mozilla.org/en/datasets), [VoxPopuli](https://github.com/facebookresearch/voxpopuli), [Multilingual Spoken Words Corpus (MSWC)](https://mlcommons.org/datasets/multilingual-spoken-words/), [OpenSLR](https://openslr.org), [People's Speech](https://mlcommons.org/en/peoples-speech/).
-* English: [Librispeech](https://www.openslr.org/12), [Ted-LIUM](https://www.openslr.org/51/), [SPGISpeech](https://datasets.kensho.com/datasets/spgispeech), [RAVDESS](https://zenodo.org/record/1188976#.XrC7a5NKjOR), [VOiCES Dataset](https://iqtlabs.github.io/voices/).
-* Arabic: [Arabic Speech Corpus](http://en.arabicspeechcorpus.com/), [ANAD](https://www.kaggle.com/suso172/arabic-natural-audio-dataset), [BAVED](https://www.kaggle.com/a13x10/basic-arabic-vocal-emotions-dataset).
-* Spanish (Castilian): [CUCO Surgery Speech Corpus](https://zenodo.org/records/11654546), [NeuroVoz](https://zenodo.org/records/13647600).
-* Persian: [Persian Consonant Vowel Combination (PCVC) Speech Dataset](https://github.com/S-Malek/PCVC), [ShEMO](https://github.com/mansourehk/ShEMO).
-* Korean: [Korean Read Speech Corpus](https://github.com/deeplyinc/Korean-Read-Speech-Corpus).
-* Japanese: [Keio-ESD](http://research.nii.ac.jp/src/en/Keio-ESD.html).
-* German: [Thorsten dataset](https://github.com/thorstenMueller/deep-learning-german-tts/), [Emo-DB](http://emodb.bilderbar.info/index-1280.html).
-* Italian: [EMOVO](http://voice.fub.it/activities/corpora/emovo/index.html).
-* Urdu: [URDU-Dataset](https://github.com/siddiquelatif/urdu-dataset).
-* Bengali-English (code-switched): [MediBeng](https://huggingface.co/datasets/pr0mila-gh0sh/MediBeng).
+Language grouping rules used here:
+* `Multilingual` means the dataset is intentionally cross-lingual.
+* `Primary language` means one dominant language is documented.
+* `Code-switched` means mixed-language utterances are the core design.
+* `Language-agnostic` means nonverbal audio, mixed utility sets, or directories.
+
+#### Multilingual and cross-lingual
+* [Common Voice](https://commonvoice.mozilla.org/en/datasets), [VoxPopuli](https://github.com/facebookresearch/voxpopuli), [Multilingual Spoken Words Corpus (MSWC)](https://mlcommons.org/datasets/multilingual-spoken-words/), [OpenSLR](https://openslr.org), [People's Speech](https://mlcommons.org/en/peoples-speech/).
+
+#### Primary language: English
+* [Librispeech](https://www.openslr.org/12), [Ted-LIUM](https://www.openslr.org/51/), [SPGISpeech](https://datasets.kensho.com/datasets/spgispeech), [RAVDESS](https://zenodo.org/record/1188976#.XrC7a5NKjOR), [VOiCES Dataset](https://iqtlabs.github.io/voices/).
+
+#### Primary language: Arabic
+* [Arabic Speech Corpus](http://en.arabicspeechcorpus.com/), [ANAD](https://www.kaggle.com/suso172/arabic-natural-audio-dataset), [BAVED](https://www.kaggle.com/a13x10/basic-arabic-vocal-emotions-dataset).
+
+#### Primary language: Spanish (Castilian)
+* [CUCO Surgery Speech Corpus](https://zenodo.org/records/11654546), [NeuroVoz](https://zenodo.org/records/13647600).
+
+#### Primary language: Persian
+* [Persian Consonant Vowel Combination (PCVC) Speech Dataset](https://github.com/S-Malek/PCVC), [ShEMO](https://github.com/mansourehk/ShEMO).
+
+#### Primary language: Korean
+* [Korean Read Speech Corpus](https://github.com/deeplyinc/Korean-Read-Speech-Corpus).
+
+#### Primary language: Japanese
+* [Keio-ESD](http://research.nii.ac.jp/src/en/Keio-ESD.html).
+
+#### Primary language: German
+* [Thorsten dataset](https://github.com/thorstenMueller/deep-learning-german-tts/), [Emo-DB](http://emodb.bilderbar.info/index-1280.html).
+
+#### Primary language: Italian
+* [EMOVO](http://voice.fub.it/activities/corpora/emovo/index.html).
+
+#### Primary language: Urdu
+* [URDU-Dataset](https://github.com/siddiquelatif/urdu-dataset).
+
+#### Code-switched
+* [MediBeng](https://huggingface.co/datasets/pr0mila-gh0sh/MediBeng) (Bengali-English).
+
+#### Language-agnostic and nonverbal
+* [VocalSound](https://github.com/YuanGongND/vocalsound), [VIVAE](https://zenodo.org/record/4066235), [Nonverbal Vocalization Dataset](https://github.com/deeplyinc/Nonverbal-Vocalization-Dataset), [ASR datasets](https://github.com/robmsmt/ASR_Audio_Data_Links), [SER Datasets](https://github.com/SuperKogito/SER-datasets).
 
 ## Pattern references
 * [awesomedata/awesome-public-datasets](https://github.com/awesomedata/awesome-public-datasets) - topic-first TOC and category section pattern.

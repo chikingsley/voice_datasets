@@ -8,7 +8,7 @@ body:
     id: dataset_name
     attributes:
       label: Dataset name
-      placeholder: Example: VoxPopuli
+      placeholder: "Example: VoxPopuli"
     validations:
       required: true
 
@@ -27,6 +27,24 @@ body:
       label: Short description
       description: Include language(s), task(s), and size/hours if known.
       placeholder: "Multilingual ASR dataset, 1000+ hours..."
+    validations:
+      required: true
+
+  - type: input
+    id: quick_index_task
+    attributes:
+      label: Suggested quick-index task category
+      description: "Example: ASR and transcription, Emotion and affect, Clinical and health speech"
+      placeholder: "ASR and transcription"
+    validations:
+      required: true
+
+  - type: input
+    id: quick_index_language
+    attributes:
+      label: Suggested quick-index language category
+      description: "Example: Multilingual and cross-lingual, Primary language: English, Code-switched"
+      placeholder: "Primary language: English"
     validations:
       required: true
 
