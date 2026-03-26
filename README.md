@@ -38,11 +38,11 @@ This section is a curated index (not exhaustive). Use the full catalog for compl
 
 ### By task
 * ASR and transcription: [Common Voice](https://commonvoice.mozilla.org/en/datasets), [Librispeech](https://www.openslr.org/12), [SPGISpeech](https://datasets.kensho.com/datasets/spgispeech), [VoxPopuli](https://github.com/facebookresearch/voxpopuli), [Ted-LIUM](https://www.openslr.org/51/), [People's Speech](https://mlcommons.org/en/peoples-speech/).
-* Emotion and affect: [IEMOCAP](https://sail.usc.edu/iemocap/iemocap_release.htm), [CREMA-D](https://github.com/CheyneyComputerScience/CREMA-D), [RAVDESS](https://zenodo.org/record/1188976#.XrC7a5NKjOR), [Emo-DB](http://emodb.bilderbar.info/index-1280.html), [TESS](https://tspace.library.utoronto.ca/handle/1807/24487), [MELD](https://github.com/SenticNet/MELD).
-* Clinical and health speech: [Coswara](https://github.com/iiscleap/Coswara-Data), [CUCO Surgery Speech Corpus](https://zenodo.org/records/11654546), [NeuroVoz](https://zenodo.org/records/13647600), [Parkinson's speech dataset](https://archive.ics.uci.edu/ml/datasets/Parkinson+Speech+Dataset+with++Multiple+Types+of+Sound+Recordings), [SEP-28k](https://www.kaggle.com/datasets/ikrbasak/sep-28k), [Parrot Radiology ASR EN](https://huggingface.co/datasets/ysdede/parrot-radiology-asr-en).
+* Emotion and affect: [IEMOCAP](https://sail.usc.edu/iemocap/iemocap_release.htm), [CREMA-D](https://github.com/CheyneyComputerScience/CREMA-D), [RAVDESS](https://zenodo.org/record/1188976#.XrC7a5NKjOR), [Emo-DB](https://github.com/audeering/emodb), [TESS](https://tspace.library.utoronto.ca/handle/1807/24487), [MELD](https://github.com/SenticNet/MELD).
+* Clinical and health speech: [Coswara](https://github.com/iiscleap/Coswara-Data), [CUCO Surgery Speech Corpus](https://zenodo.org/records/11654546), [NeuroVoz](https://zenodo.org/records/13647600), [Parkinson's speech dataset](https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings), [SEP-28k](https://www.kaggle.com/datasets/ikrbasak/sep-28k), [Parrot Radiology ASR EN](https://huggingface.co/datasets/ysdede/parrot-radiology-asr-en).
 * Speaker and diarization: [VoxCeleb](https://github.com/andabi/voice-vector), [VOiCES Dataset](https://iqtlabs.github.io/voices/), [Awesome_Diarization](https://github.com/jim-schwoebel/awesome-diarization).
-* Speech enhancement and separation: [CHIME](https://archive.org/details/chime-home), [WHAM! and WHAMR!](http://wham.whisper.ai/), [LibriMix](https://github.com/JorisCos/LibriMix), [VCTK-2Mix](https://github.com/JorisCos/VCTK-2Mix), [Microsoft Scalable Noisy Speech Dataset](https://github.com/microsoft/MS-SNSD).
-* Commands and keyword spotting: [Speech Commands Dataset](http://ai.googleblog.com/2017/08/launching-speech-commands-dataset.html), [Free Spoken Digit Dataset](https://github.com/Jakobovski/free-spoken-digit-dataset), [AudioMNIST](https://github.com/soerenab/AudioMNIST), [Multilingual Spoken Words Corpus (MSWC)](https://mlcommons.org/datasets/multilingual-spoken-words/).
+* Speech enhancement and separation: [CHIME](https://archive.org/details/chime-home), [WHAM! and WHAMR!](https://arxiv.org/abs/1910.10279), [LibriMix](https://github.com/JorisCos/LibriMix), [VCTK-2Mix](https://github.com/JorisCos/VCTK-2Mix), [Microsoft Scalable Noisy Speech Dataset](https://github.com/microsoft/MS-SNSD).
+* Commands and keyword spotting: [Speech Commands Dataset](https://research.google/blog/launching-the-speech-commands-dataset/), [Free Spoken Digit Dataset](https://github.com/Jakobovski/free-spoken-digit-dataset), [AudioMNIST](https://github.com/soerenab/AudioMNIST), [Multilingual Spoken Words Corpus (MSWC)](https://mlcommons.org/datasets/multilingual-spoken-words/).
 * Human non-speech vocal sounds: [VocalSound](https://github.com/YuanGongND/vocalsound), [VIVAE](https://zenodo.org/record/4066235), [Nonverbal Vocalization Dataset](https://github.com/deeplyinc/Nonverbal-Vocalization-Dataset).
 * Dataset directories and meta-lists: [ASR datasets](https://github.com/robmsmt/ASR_Audio_Data_Links), [OpenSLR](https://openslr.org), [SER Datasets](https://github.com/SuperKogito/SER-datasets), [ISMIR Datasets List](https://www.ismir.net/resources/datasets/).
 
@@ -75,7 +75,7 @@ Language grouping rules used here:
 * [Keio-ESD](http://research.nii.ac.jp/src/en/Keio-ESD.html).
 
 #### Primary language: German
-* [Thorsten dataset](https://github.com/thorstenMueller/deep-learning-german-tts/), [Emo-DB](http://emodb.bilderbar.info/index-1280.html).
+* [Thorsten dataset](https://github.com/thorstenMueller/deep-learning-german-tts/), [Emo-DB](https://github.com/audeering/emodb).
 
 #### Primary language: Italian
 * [EMOVO](http://voice.fub.it/activities/corpora/emovo/index.html).
@@ -98,7 +98,7 @@ Language grouping rules used here:
 <details open>
 <summary><strong>Speech datasets (A-Z)</strong></summary>
 
-* [AESDD](http://m3c.web.auth.gr/research/aesdd-speech-emotion-recognition/) - around 500 utterances by a diverse group of actors (over 5 actors) simlating various emotions.
+* [AESDD](https://m3c.web.auth.gr/research/aesdd-speech-emotion-recognition/) - around 500 utterances by a diverse group of actors (over 5 actors) simlating various emotions.
 * [ANAD](https://www.kaggle.com/suso172/arabic-natural-audio-dataset) - 1384 recording by multiple speakers; 3 emotions: angry, happy, surprised.
 * [Arabic Speech Corpus](http://en.arabicspeechcorpus.com/) - The Arabic Speech Corpus (1.5 GB) is a Modern Standard Arabic (MSA) speech corpus for speech synthesis. The corpus contains phonetic and orthographic transcriptions of more than 3.7 hours of MSA speech aligned with recorded speech on the phoneme level. The annotations include word stress marks on the individual phonemes. 
 * [ASR datasets](https://github.com/robmsmt/ASR_Audio_Data_Links) - A list of publically available audio data that anyone can download for ASR or other speech activities
@@ -110,18 +110,18 @@ Language grouping rules used here:
 * [Common Voice](https://commonvoice.mozilla.org/en/datasets) - Common Voice is Mozilla's initiative to help teach machines how real people speak. 12GB in size; spoken text based on text from a number of public domain sources like user-submitted blog posts, old books, movies, and other public speech corpora.
 * [CHIME](https://archive.org/details/chime-home) - This is a noisy speech recognition challenge dataset (~4GB in size). The dataset contains real simulated and clean voice recordings. Real being actual recordings of 4 speakers in nearly 9000 recordings over 4 noisy locations, simulated is generated by combining multiple environments over speech utterances and clean being non-noisy recordings. 
 * [Coswara](https://github.com/iiscleap/Coswara-Data) - A database that contains respiratory sounds, namely, cough, breath, and speech of healthy and COVID-19 positive individuals.
-* [CMU-MOSEI](https://www.amir-zadeh.com/datasets) - 65 hours of annotated video from more than 1000 speakers and 250 topics; 6 Emotion (happiness, sadness, anger,fear, disgust, surprise) + Likert scale.
-* [CMU-MOSI](https://www.amir-zadeh.com/datasets) - 2199 opinion utterances with annotated sentiment; Sentiment annotated between very negative to very positive in seven Likert steps.
-* [CMU Wilderness](http://festvox.org/cmu_wilderness/) - (noncommercial) - not available but a great speech dataset many accents reciting passages from the Bible.
+* [CMU-MOSEI](https://github.com/CMU-MultiComp-Lab/CMU-MultimodalSDK) - 65 hours of annotated video from more than 1000 speakers and 250 topics; 6 Emotion (happiness, sadness, anger,fear, disgust, surprise) + Likert scale.
+* [CMU-MOSI](https://github.com/CMU-MultiComp-Lab/CMU-MultimodalSDK) - 2199 opinion utterances with annotated sentiment; Sentiment annotated between very negative to very positive in seven Likert steps.
+* [CMU Wilderness](https://github.com/festvox/datasets-CMU_Wilderness) - (noncommercial) - not available but a great speech dataset many accents reciting passages from the Bible.
 * [CREMA-D](https://github.com/CheyneyComputerScience/CREMA-D) - CREMA-D is a data set of 7,442 original clips from 91 actors. These clips were from 48 male and 43 female actors between the ages of 20 and 74 coming from a variety of races and ethnicities (African America, Asian, Caucasian, Hispanic, and Unspecified).
 * [CUCO Surgery Speech Corpus](https://zenodo.org/records/11654546) - Spanish pre-/post-operative voice and speech corpus for upper airway surgery cases and controls.
 * [DAPS Dataset](https://archive.org/details/daps_dataset) - DAPS consists of 20 speakers (10 female and 10 male) reading 5 excerpts each from public domain books (which provides about 14 minutes of data per speaker). 
 * [Deep Clustering Dataset](https://www.merl.com/demos/deep-clustering) - Training deep discriminative embeddings to solve the cocktail party problem.
 * [DEMoS](https://zenodo.org/record/2544829) - 9365 emotional and 332 neutral samples produced by 68 native speakers (23 females, 45 males); 7/6 emotions: anger, sadness, happiness, fear, surprise, disgust, and the secondary emotion guilt.
-* [DES](http://kom.aau.dk/~tb/speech/Emotions/) - 4 speakers (2 males and 2 females); 5 emotions: neutral, surprise, happiness, sadness and anger.
+* [DES](https://doi.org/10.1006/brln.2000.2325) - 4 speakers (2 males and 2 females); 5 emotions: neutral, surprise, happiness, sadness and anger.
 * [DIPCO](https://arxiv.org/abs/1909.13447) - Dinner Party Corpus - The participants were recorded by a single-channel close-talk microphone and by five far-field 7-microphone array devices positioned at different locations in the recording room. The dataset contains the audio recordings and human labeled transcripts of a total of 10 sessions with a duration between 15 and 45 minutes. 
-* [EEKK](https://metashare.ut.ee/repository/download/4d42d7a8463411e2a6e4005056b40024a19021a316b54b7fb707757d43d1a889/) - 26 text passage read by 10 speakers; 4 main emotions: joy, sadness, anger and neutral.
-* [Emo-DB](http://emodb.bilderbar.info/index-1280.html) - 800 recording spoken by 10 actors (5 males and 5 females); 7 emotions: anger, neutral, fear, boredom, happiness, sadness, disgust.
+* [EEKK](https://metashare.ut.ee/repository/browse/estonian-emotional-speech-corpus/f5e5fc91a0d311eebb4773db10791bcf07ff90a82bf541dbbb9ecf816da202fe/) - 26 text passage read by 10 speakers; 4 main emotions: joy, sadness, anger and neutral.
+* [Emo-DB](https://github.com/audeering/emodb) - 800 recording spoken by 10 actors (5 males and 5 females); 7 emotions: anger, neutral, fear, boredom, happiness, sadness, disgust.
 * [EmoFilm](https://zenodo.org/record/1326428) - 1115 audio instances sentences extracted from various films.
 * [EmoSynth](https://zenodo.org/record/3727593) - 144 audio file labelled by 40 listeners; Emotion (no speech) defined in regard of valence and arousal.
 * [Emotional Voices Database](https://github.com/numediart/EmoV-DB) - various emotions with 5 voice actors (amused, angry, disgusted, neutral, sleepy).
@@ -157,24 +157,24 @@ Language grouping rules used here:
 * [Noisy Dataset](https://datashare.is.ed.ac.uk/handle/10283/2791)- Clean and noisy parallel speech database. The database was designed to train and test speech enhancement methods that operate at 48kHz. Also known as VBD, Voice Bank + DEMAND. Speech samples from VCTK dataset.
 * [OGVC](https://sites.google.com/site/ogcorpus/home/en) - 9114 spontaneous utterances and 2656 acted utterances by 4 professional actors (two male and two female); 9 emotional states: fear, surprise, sadness, disgust, anger, anticipation, joy, acceptance and the neutral state.
 * [OpenSLR](https://openslr.org) - Many audio datasets (>109) published for speech recognition purposes. 
-* [Parkinson's speech dataset](https://archive.ics.uci.edu/ml/datasets/Parkinson+Speech+Dataset+with++Multiple+Types+of+Sound+Recordings) - The training data belongs to 20 Parkinson’s Disease (PD) patients and 20 healthy subjects. From all subjects, multiple types of sound recordings (26) are taken for this 20 MB set.
+* [Parkinson's speech dataset](https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings) - The training data belongs to 20 Parkinson’s Disease (PD) patients and 20 healthy subjects. From all subjects, multiple types of sound recordings (26) are taken for this 20 MB set.
 * [Parent-Child Vocal Interaction Dataset](https://github.com/deeplyinc/Parent-Child-Vocal-Interaction-Dataset) - Parent-child conversational vocal interaction recordings for speech and interaction analysis.
 * [Parrot Radiology ASR EN](https://huggingface.co/datasets/ysdede/parrot-radiology-asr-en) - Synthetic English radiology speech corpus with paired transcripts for domain ASR.
 * [People's Speech](https://mlcommons.org/en/peoples-speech/) - Large-scale speech corpus released by MLCommons for open ASR training.
 * [Persian Consonant Vowel Combination (PCVC) Speech Dataset](https://github.com/S-Malek/PCVC) - The Persian Consonant Vowel Combination (PCVC) Speech Dataset is a Modern Persian speech corpus for speech recognition and also speaker recognition. This dataset contains 23 Persian consonants and 6 vowels. The sound samples are all possible combinations of vowels and consonants (138 samples for each speaker) with a length of 30000 data samples.
-* [RECOLA](https://diuf.unifr.ch/main/diva/recola/download.html) - 3.8 hours of recordings by 46 participants; negative and positive sentiment (valence and arousal).
+* [RECOLA](https://qualinet.github.io/databases/audiovisual/recola/) - 3.8 hours of recordings by 46 participants; negative and positive sentiment (valence and arousal).
 * [The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)](https://zenodo.org/record/1188976#.XrC7a5NKjOR) - The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS) contains 7356 files (total size: 24.8 GB). The database contains 24 professional actors (12 female, 12 male), vocalizing two lexically-matched statements in a neutral North American accent. Speech includes calm, happy, sad, angry, fearful, surprise, and disgust expressions, and song contains calm, happy, sad, angry, and fearful emotions.
 * [sample_voice_data](https://github.com/jim-schwoebel/sample_voice_data) - 52 audio files per class (males and females) for testing purposes.
 * [SAVEE Dataset](http://kahlan.eps.surrey.ac.uk/savee/) -  4 male actors in 7 different emotions, 480 British English utterances in total.
-* [SEMAINE](https://semaine-db.eu/) - 95 dyadic conversations from 21 subjects. Each subject converses with another playing one of four characters with emotions; 5 FeelTrace annotations: activation, valence, dominance, power, intensity.
+* [SEMAINE](https://doi.org/10.1109/T-AFFC.2011.15) - 95 dyadic conversations from 21 subjects. Each subject converses with another playing one of four characters with emotions; 5 FeelTrace annotations: activation, valence, dominance, power, intensity.
 * [SEP-28k](https://www.kaggle.com/datasets/ikrbasak/sep-28k) - Stuttering events dataset with ~28k annotated 3-second podcast clips plus FluencyBank subset metadata.
 * [SER Datasets](https://github.com/SuperKogito/SER-datasets) - A collection of datasets for the purpose of emotion recognition/detection in speech.
-* [SEWA](https://db.sewaproject.eu/) - more than 2000 minutes of audio-visual data of 398 people (201 male and 197 female) coming from 6 cultures; emotions are characterized using valence and arousal.
+* [SEWA](https://sewaproject.eu/resources) - more than 2000 minutes of audio-visual data of 398 people (201 male and 197 female) coming from 6 cultures; emotions are characterized using valence and arousal.
 * [ShEMO](https://github.com/mansourehk/ShEMO) - 3000 semi-natural utterances, equivalent to 3 hours and 25 minutes of speech data from online radio plays by 87 native-Persian speakers; 6 emotions: anger, fear, happiness, sadness, neutral and surprise.
 * [SparseLibriMix](https://github.com/popcornell/SparseLibriMix) - An open source dataset for source separation in noisy environments and with variable overlap-ratio. Due to insufficient noise material this is a test-set-only version.
 * [SPGISpeech](https://datasets.kensho.com/datasets/spgispeech) - 5,000-hour real-world and anonymized English speech corpus for ASR.
-* [Speech Accent Archive](https://www.kaggle.com/rtatman/speech-accent-archive/version/1) - For various accent detection tasks.
-* [Speech Commands Dataset](http://ai.googleblog.com/2017/08/launching-speech-commands-dataset.html) - The dataset (1.4 GB) has 65,000 one-second long utterances of 30 short words, by thousands of different people, contributed by members of the public through the AIY website.
+* [Speech Accent Archive](https://www.kaggle.com/datasets/rtatman/speech-accent-archive) - For various accent detection tasks.
+* [Speech Commands Dataset](https://research.google/blog/launching-the-speech-commands-dataset/) - The dataset (1.4 GB) has 65,000 one-second long utterances of 30 short words, by thousands of different people, contributed by members of the public through the AIY website.
 * [Spoken Commands dataset](https://github.com/JohannesBuchner/spoken-command-recognition) - A large database of free audio samples (10M words), a test bed for voice activity detection algorithms and for recognition of syllables (single-word commands). 3 speakers, 1,500 recordings (50 of each digit per speaker), English pronunciations. This is a really small set- about 10 MB in size.
 * [Spoken Wikipeida Corpora](https://nats.gitlab.io/swc/) - 38 GB in size available in both audio and without audio format.
 * [Tatoeba](https://tatoeba.org/eng/downloads) - Tatoeba is a large database of sentences, translations, and spoken audio for use in language learning. This download contains spoken English recorded by their community.
@@ -190,9 +190,9 @@ Language grouping rules used here:
 * [Voice Gender Detection](https://github.com/jim-schwoebel/voice_gender_detection) - GitHub repo for Voice gender detection using the VoxCeleb dataset (7000+ unique speakers and utterances, 3683 males / 2312 females).
 * [VOiCES Dataset](https://iqtlabs.github.io/voices/) - The Voices Obscured in Complex Environmental Settings (VOiCES) corpus is a creative commons speech dataset targeting acoustically challenging and reverberant environments with robust labels and truth data for transcription, denoising, and speaker identification.
 * [VoxCeleb](https://github.com/andabi/voice-vector) - VoxCeleb is a large-scale speaker identification dataset. It contains around 100,000 utterances by 1,251 celebrities, extracted from You Tube videos. The data is mostly gender balanced (males comprise of 55%). The celebrities span a diverse range of accents, professions, and age. There is no overlap between the development and test sets. It’s an intriguing use case for isolating and identifying which superstar the voice belongs to.
-* [VoxForge](http://www.repository.voxforge1.org/downloads/SpeechCorpus/Trunk/) - VoxForge was set up to collect transcribed speech for use with Free and Open Source Speech Recognition Engines.
+* [VoxForge](https://www.voxforge.org/home/downloads) - VoxForge was set up to collect transcribed speech for use with Free and Open Source Speech Recognition Engines.
 * [VoxPopuli](https://github.com/facebookresearch/voxpopuli) - VoxPopuli provides 100K hours of unlabelled speech data for 23 languages, 1.8K hours of transcribed speech data for 16 languages, and 17.3K hours of speech-to-speech interpretation data for 16x15 directions.
-* [WHAM! and WHAMR!](http://wham.whisper.ai/) - The WSJ0 Hipster Ambient Mixtures (WHAM!) dataset pairs each two-speaker mixture in the wsj0-2mix dataset with a unique noise background scene. WHAMR! is an extension to WHAM! that adds artificial reverberation to the speech signals in addition to the background noise. The noise audio was collected at various urban locations throughout the San Francisco Bay Area in late 2018. The environments primarily consist of restaurants, cafes, bars, and parks. Size of WHAM! dataset: 17.65 GB unzipping to 35 GB.
+* [WHAM! and WHAMR!](https://arxiv.org/abs/1910.10279) - The WSJ0 Hipster Ambient Mixtures (WHAM!) dataset pairs each two-speaker mixture in the wsj0-2mix dataset with a unique noise background scene. WHAMR! is an extension to WHAM! that adds artificial reverberation to the speech signals in addition to the background noise. The noise audio was collected at various urban locations throughout the San Francisco Bay Area in late 2018. The environments primarily consist of restaurants, cafes, bars, and parks. Size of WHAM! dataset: 17.65 GB unzipping to 35 GB.
 * [Zero Resource Speech Challenge](https://github.com/bootphon/zerospeech2017) - The ultimate goal of the Zero Resource Speech Challenge is to construct a system that learns an end-to-end Spoken Dialog (SD) system, in an unknown language, from scratch, using only information available to a language learning infant. “Zero resource” refers to zero linguistic expertise (e.g., orthographic/linguistic transcriptions), not zero information besides audio (visual, limited human feedback, etc). The fact that 4-year-olds spontaneously learn a language without supervision from language experts show that this goal is theoretically reachable.
 
 </details>
@@ -202,14 +202,14 @@ Language grouping rules used here:
 
 * [AudioSet](https://research.google.com/audioset/) - An expanding ontology of 632 audio event classes and a collection of 2,084,320 human-labeled 10-second sound clips drawn from YouTube videos. Easily download AudioSet [here](https://github.com/jim-schwoebel/download_audioset).
 * [Bird audio detection challenge](http://machine-listening.eecs.qmul.ac.uk/bird-audio-detection-challenge/) -  This challenge contained new datasets (5.4 GB) collected in real live bio-acoustics monitoring projects, and an objective, standardized evaluation framework.
-* [Environmental audio dataset](http://www.cs.tut.fi/~heittolt/datasets) - Audio data collection and manual data annotation both are tedious processes, and lack of proper development dataset limits fast development in the environmental audio research.
+* [Environmental audio dataset](https://toni-heittola.github.io/datasets) - Audio data collection and manual data annotation both are tedious processes, and lack of proper development dataset limits fast development in the environmental audio research.
 * [Free Music Archive](https://github.com/mdeff/fma) - FMA is a dataset for music analysis. 1000 GB in size.
 * [Freesound dataset](https://www.kaggle.com/c/freesound-audio-tagging-2019/data) - 678,511 candidate annotations that express the potential presence of sound sources in audio clips. See https://annotator.freesound.org/ and https://annotator.freesound.org/fsd/explore/ for more information. 
 * [Karoldvl-ESC](https://github.com/karoldvl/ESC-50) - The ESC-50 dataset is a labeled collection of 2000 environmental audio recordings suitable for benchmarking methods of environmental sound classification.
 * [ISMIR Datasets List](https://www.ismir.net/resources/datasets/) - Community-maintained index of music information retrieval datasets.
 * [Million Song Dataset](https://labrosa.ee.columbia.edu/millionsong/) - The Million Song Dataset is a freely-available collection of audio features and meta-data for a million contemporary popular music tracks. 280 GB in size.
-* [MUSDB18](https://sigsep.github.io/datasets/musdb.html) - Multi-track music dataset for music source separation. 150 tracks (22 Gb).
-* [Public domain sounds](http://pdsounds.tuxfamily.org/) - Good for wake word detection; a wide array of sounds that can be used for object detection research (524 MB - 635 SOUNDS - Open for public use). 
+* [MUSDB18](https://github.com/sigsep/sigsep-mus-db) - Multi-track music dataset for music source separation. 150 tracks (22 Gb).
+* [Public domain sounds](https://pdsounds.tuxfamily.org/) - Good for wake word detection; a wide array of sounds that can be used for object detection research (524 MB - 635 SOUNDS - Open for public use). 
 * [RSC Sounds](https://github.com/2003scape/rsc-sounds) - RSC sounds from RuneScape Classic (8-bit, u-law encoded, 8000 Hz pcm samples).
 * [Urban Sound Dataset](https://urbansounddataset.weebly.com/) - two datasets and a taxonomy for urban sound research.
 
@@ -223,7 +223,7 @@ Language grouping rules used here:
 ## Learn more
 Any feedback this repository is greatly appreciated. 
 
-* Suggest a new dataset to add in [Issues](https://github.com/chikingsley/voice_datasets/issues/new/choose).
+* Suggest a new dataset to add in [Issues](https://github.com/chikingsley/voice_datasets/issues).
 * Read [CONTRIBUTING.md](./CONTRIBUTING.md) for curation and validation guidelines.
 * If you want to learn more about voice computing, check out [Voice Computing in Python](https://github.com/jim-schwoebel/voicebook) book.
 * If you are looking for a framework to start building machine learning models in voice computing, check out [Allie](https://github.com/jim-schwoebel/allie).
