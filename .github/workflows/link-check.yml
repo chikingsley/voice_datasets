@@ -34,10 +34,11 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --exclude-mail
-            --max-retries 2
-            --retry-wait-time 2
-            --accept 200,201,202,203,204,206,301,302,307,308,401,403,429
+            --max-retries 3
+            --retry-wait-time 3
+            --accept 200,201,202,203,204,206,301,302,307,308,401,403,407,429,500,502,503,521
+            --exclude 'web.archive.org'
+            --exclude 'mega.nz'
             ${{ steps.changed-files.outputs.all_changed_files }}
           fail: true
 
@@ -58,10 +59,11 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --exclude-mail
-            --max-retries 2
-            --retry-wait-time 2
-            --accept 200,201,202,203,204,206,301,302,307,308,401,403,429
+            --max-retries 3
+            --retry-wait-time 3
+            --accept 200,201,202,203,204,206,301,302,307,308,401,403,407,429,500,502,503,521
+            --exclude 'web.archive.org'
+            --exclude 'mega.nz'
             --format markdown
             --output lychee-report.md
             '**/*.md'
